@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "千夏醬",
+    "version": "0.1.0",
+    "discription":"是千夏醬呦~",
+    "icons": {
+        "16": "./images/icon.png",
+        "32": "./images/icon.png",
+        "48": "./images/icon.png",
+        "128": "./images/icon_128.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["./scripts/content.js"],
+            "matches": [
+                "https://crm.mingdao.edu.tw/*",
+                "https://s44.mingdao.edu.tw/AACourses/Web/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "./ui/index.html",
+        "default_icon": "./images/icon.png"
+    }
+}
